@@ -64,7 +64,7 @@ mengakses localStorage, memanipulasi DOM node secara manual, menjalankan timer d
 maka semua aksi tersebut disebut side effects atau bisa disebut efek saja.<br />
 
 Contoh kasus menggunakan
-`http://jsonplaceholder.typicode.com/posts/1` <br />
+[http://jsonplaceholder.typicode.com/posts/1](http://jsonplaceholder.typicode.com/posts/1)
 
 File yg di gunakan di src
 - App.js
