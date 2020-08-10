@@ -29,3 +29,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 # // --------------------- 1 Basic Template ---------------------
 Cara menggunakan react template
+
+# // --------------------- 2 - Button dan element basic ---------------------
+File yg di gunakan
+- App.js
