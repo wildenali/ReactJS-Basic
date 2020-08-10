@@ -33,3 +33,13 @@ Cara menggunakan react template
 # // --------------------- 2 - Button dan element basic ---------------------
 File yg di gunakan
 - App.js
+
+# // --------------------- 3 - CSS Basin in React ---------------------
+File yg di gunakan
+- App.js
+
+# // --------------------- 4 - Component dan Props ---------------------
+File yg di gunakan di src
+- App.js
+- index.js
+- Pelajari cara validasi props menggunakan props-type (cek di web nya)

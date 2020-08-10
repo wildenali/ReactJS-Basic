@@ -31,20 +31,39 @@
 // // --------------------- 2 - Button dan element basic ---------------------
 
 
-// --------------------- 3 - CSS basic in React ---------------------
+// // --------------------- 3 - CSS basic in React ---------------------
+// import React from 'react';
+// import './App.css';
+// function App() {
+//   const judul = "Ini Judul"
+//   const handlePencet = (e) => {
+//     console.log('Di pencet')
+//   }
+//   return (
+//     <div className="App">
+//       <h1 style={{color: 'red', textAlign:'right'}}>{judul}</h1>
+//       <button onClick={handlePencet}>Pencet</button>
+//     </div>
+//   );
+// }
+// export default App;
+// // --------------------- 3 - CSS basic in React ---------------------
+
+
+// --------------------- 4 - Component dan Props ---------------------
 import React from 'react';
 import './App.css';
-function App() {
-  const judul = "Ini Judul"
-  const handlePencet = (e) => {
-    console.log('Di pencet')
-  }
+
+function App(props) {
+
+  console.log(props)
+
   return (
     <div className="App">
-      <h1 style={{color: 'red', textAlign:'right'}}>{judul}</h1>
-      <button onClick={handlePencet}>Pencet</button>
+      <h1>Heeey ini {props.nama}</h1>
     </div>
   );
 }
+
 export default App;
-// --------------------- 3 - CSS basic in React ---------------------
+// --------------------- 4 - Component dan Props ---------------------

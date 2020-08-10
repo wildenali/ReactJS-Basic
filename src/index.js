@@ -6,7 +6,9 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* // --------------------- 4 - Component dan Props --------------------- */}
+    <App nama="wilden"/>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
