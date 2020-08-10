@@ -7,7 +7,10 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     {/* // --------------------- 4 - Component dan Props --------------------- */}
-    <App nama="wilden"/>
+    {/* <App nama="wilden"/> */}
+
+    {/* // --------------------- 5 - props.children --------------------- */}
+    <App nama="ali"/>
 
   </React.StrictMode>,
   document.getElementById('root')

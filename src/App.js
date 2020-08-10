@@ -50,9 +50,29 @@
 // // --------------------- 3 - CSS basic in React ---------------------
 
 
-// --------------------- 4 - Component dan Props ---------------------
+// // --------------------- 4 - Component dan Props ---------------------
+// import React from 'react';
+// import './App.css';
+
+// function App(props) {
+
+//   console.log(props)
+
+//   return (
+//     <div className="App">
+//       <h1>Heeey ini {props.nama}</h1>
+//     </div>
+//   );
+// }
+
+// export default App;
+// // --------------------- 4 - Component dan Props ---------------------
+
+
+// --------------------- 5 - props.children ---------------------
 import React from 'react';
 import './App.css';
+import E_Header from './E_Header'
 
 function App(props) {
 
@@ -60,10 +80,11 @@ function App(props) {
 
   return (
     <div className="App">
-      <h1>Heeey ini {props.nama}</h1>
+      <E_Header>{props.nama}</E_Header>
+      <h1>Heeey ini</h1>
     </div>
   );
 }
 
 export default App;
-// --------------------- 4 - Component dan Props ---------------------
+// --------------------- 5 - props.children ---------------------

@@ -43,3 +43,9 @@ File yg di gunakan di src
 - App.js
 - index.js
 - Pelajari cara validasi props menggunakan props-type (cek di web nya)
+
+# // --------------------- 5 - props.children ---------------------
+File yg di gunakan di src
+- App.js
+- index.js
+- E_Header.js
