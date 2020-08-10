@@ -90,22 +90,56 @@
 // // --------------------- 5 - props.children ---------------------
 
 
-// --------------------- 6 - State dan useState Hook ---------------------
-import React, { useState } from 'react';
+// // --------------------- 6 - State dan useState Hook ---------------------
+// import React, { useState } from 'react';
+// import './App.css';
+
+// function App() {
+
+//   const [count, setCount] = useState(0)
+
+//   return (
+//     <div className="App">
+//       <h1>Ini useState</h1>
+//       <p>Coba Berhitung: {count}</p>
+//       <button onClick={e=>setCount(count+1)}>Pencet Dong</button>
+//     </div>
+//   );
+// }
+
+// export default App;
+// // --------------------- 6 - State dan useState Hook ---------------------
+
+
+// --------------------- 7 - useEffect Hook for SideEffect ---------------------
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
 
-  const [count, setCount] = useState(0)
+  const [post, setPost] = useState({})
+  const [postId, setPostId] = useState(1)
+  useEffect(() => {
+    const fetchPost = async () => {
+      const res = await fetch(`http://jsonplaceholder.typicode.com/posts/${postId}`);
+      const post = await res.json();
+      console.log(post);
+      setPost(post);
+    }
+    fetchPost();
+  },[postId])
 
   return (
     <div className="App">
       <h1>Ini useState</h1>
-      <p>Coba Berhitung: {count}</p>
-      <button onClick={e=>setCount(count+1)}>Pencet Dong</button>
+      <p>Coba Berhitung: {postId}</p>
+      <button onClick={e=>setPostId(postId+1)}>Pencet Dong</button>
+
+      <h1>{post.title}</h1>
+      <p>{post.body}</p>
     </div>
   );
 }
 
 export default App;
-// --------------------- 6 - State dan useState Hook ---------------------
+// --------------------- 7 - useEffect Hook for SideEffect ---------------------

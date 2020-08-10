@@ -56,5 +56,13 @@ File yg di gunakan di src
 State merupakan data yang berada dalam component dan dikelola oleh component itu sendiri
 File yg di gunakan di src
 - App.js
-- index.js
 
+# // --------------------- 7 - useEffect Hook for SideEffect ---------------------
+Jik sebuah fungsi component memerlukan komunikasi atau akses dengan dunia luar,<br />
+misalnya mengabil data dari REST API, berlangganan ke sebuah websocker,<br />
+mengakses localStorage, memanipulasi DOM node secara manual, menjalankan timer dsb,<br />
+maka semua aksi tersebut disebut side effects atau bisa disebut efek saja.<br />
+Contoh kasus menggunakan
+`http://jsonplaceholder.typicode.com/posts/1` <br />
+File yg di gunakan di src
+- App.js
