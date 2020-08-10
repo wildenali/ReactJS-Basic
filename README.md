@@ -27,42 +27,44 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-# // --------------------- 1 Basic Template ---------------------
+# // ---------- 1 Basic Template ----------
 Cara menggunakan react template
 
-# // --------------------- 2 - Button dan element basic ---------------------
+# // ---------- 2 - Button dan element basic ----------
 File yg di gunakan
 - App.js
 
-# // --------------------- 3 - CSS Basin in React ---------------------
+# // ---------- 3 - CSS Basin in React ----------
 File yg di gunakan
 - App.js
 
-# // --------------------- 4 - Component dan Props ---------------------
-Props merupakan data yang berada dalam component yg dapat dikelola baik
-dalam component itu sendiri maupun dapat di berikan ke luar component tersebut
+# // ---------- 4 - Component dan Props ----------
+Props merupakan data yang berada dalam component yg dapat dikelola baik<br />
+dalam component itu sendiri maupun dapat di berikan ke luar component tersebut<br />
 File yg di gunakan di src
 - App.js
 - index.js
 - Pelajari cara validasi props menggunakan props-type (cek di web nya)
 
-# // --------------------- 5 - props.children ---------------------
+# // ---------- 5 - props.children ----------
 File yg di gunakan di src
 - App.js
 - index.js
 - E_Header.js
 
-# // --------------------- 6 - State dan useState Hook ---------------------
-State merupakan data yang berada dalam component dan dikelola oleh component itu sendiri
+# // ---------- 6 - State dan useState Hook ----------
+State merupakan data yang berada dalam component dan dikelola oleh component itu sendiri<br />
 File yg di gunakan di src
 - App.js
 
-# // --------------------- 7 - useEffect Hook for SideEffect ---------------------
+# // ---------- 7 - useEffect Hook for SideEffect ----------
 Jik sebuah fungsi component memerlukan komunikasi atau akses dengan dunia luar,<br />
 misalnya mengabil data dari REST API, berlangganan ke sebuah websocker,<br />
 mengakses localStorage, memanipulasi DOM node secara manual, menjalankan timer dsb,<br />
 maka semua aksi tersebut disebut side effects atau bisa disebut efek saja.<br />
+
 Contoh kasus menggunakan
 `http://jsonplaceholder.typicode.com/posts/1` <br />
+
 File yg di gunakan di src
 - App.js
