@@ -6,11 +6,13 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <App/>
+
     {/* // --------------------- 4 - Component dan Props --------------------- */}
     {/* <App nama="wilden"/> */}
 
     {/* // --------------------- 5 - props.children --------------------- */}
-    <App nama="ali"/>
+    {/* <App nama="ali"/> */}
 
   </React.StrictMode>,
   document.getElementById('root')

@@ -39,6 +39,8 @@ File yg di gunakan
 - App.js
 
 # // --------------------- 4 - Component dan Props ---------------------
+Props merupakan data yang berada dalam component yg dapat dikelola baik
+dalam component itu sendiri maupun dapat di berikan ke luar component tersebut
 File yg di gunakan di src
 - App.js
 - index.js
@@ -49,3 +51,10 @@ File yg di gunakan di src
 - App.js
 - index.js
 - E_Header.js
+
+# // --------------------- 6 - State dan useState Hook ---------------------
+State merupakan data yang berada dalam component dan dikelola oleh component itu sendiri
+File yg di gunakan di src
+- App.js
+- index.js
+

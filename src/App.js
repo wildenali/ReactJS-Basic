@@ -69,22 +69,43 @@
 // // --------------------- 4 - Component dan Props ---------------------
 
 
-// --------------------- 5 - props.children ---------------------
-import React from 'react';
+// // --------------------- 5 - props.children ---------------------
+// import React from 'react';
+// import './App.css';
+// import E_Header from './E_Header'
+
+// function App(props) {
+
+//   console.log(props)
+
+//   return (
+//     <div className="App">
+//       <E_Header>{props.nama}</E_Header>
+//       <h1>Heeey ini</h1>
+//     </div>
+//   );
+// }
+
+// export default App;
+// // --------------------- 5 - props.children ---------------------
+
+
+// --------------------- 6 - State dan useState Hook ---------------------
+import React, { useState } from 'react';
 import './App.css';
-import E_Header from './E_Header'
 
-function App(props) {
+function App() {
 
-  console.log(props)
+  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <E_Header>{props.nama}</E_Header>
-      <h1>Heeey ini</h1>
+      <h1>Ini useState</h1>
+      <p>Coba Berhitung: {count}</p>
+      <button onClick={e=>setCount(count+1)}>Pencet Dong</button>
     </div>
   );
 }
 
 export default App;
-// --------------------- 5 - props.children ---------------------
+// --------------------- 6 - State dan useState Hook ---------------------
