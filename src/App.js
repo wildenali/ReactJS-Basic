@@ -111,7 +111,41 @@
 // // --------------------- 6 - State dan useState Hook ---------------------
 
 
-// --------------------- 7 - useEffect Hook for SideEffect ---------------------
+// // --------------------- 7 - useEffect Hook for SideEffect ---------------------
+// import React, { useState, useEffect } from 'react';
+// import './App.css';
+
+// function App() {
+
+//   const [post, setPost] = useState({})
+//   const [postId, setPostId] = useState(1)
+//   useEffect(() => {
+//     const fetchPost = async () => {
+//       const res = await fetch(`http://jsonplaceholder.typicode.com/posts/${postId}`);
+//       const post = await res.json();
+//       console.log(post);
+//       setPost(post);
+//     }
+//     fetchPost();
+//   },[postId])
+
+//   return (
+//     <div className="App">
+//       <h1>Ini useState</h1>
+//       <p>Coba Berhitung: {postId}</p>
+//       <button onClick={e=>setPostId(postId+1)}>Pencet Dong</button>
+
+//       <h1>{post.title}</h1>
+//       <p>{post.body}</p>
+//     </div>
+//   );
+// }
+
+// export default App;
+// // --------------------- 7 - useEffect Hook for SideEffect ---------------------
+
+
+// --------------------- 8 - Conditional Rendering ---------------------
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
@@ -119,15 +153,23 @@ function App() {
 
   const [post, setPost] = useState({})
   const [postId, setPostId] = useState(1)
+  const [isFetching, setIsFetching] = useState(true)
   useEffect(() => {
     const fetchPost = async () => {
+      setIsFetching(true);
       const res = await fetch(`http://jsonplaceholder.typicode.com/posts/${postId}`);
       const post = await res.json();
       console.log(post);
       setPost(post);
+      setIsFetching(false);
     }
     fetchPost();
   },[postId])
+
+  // Cara Pertama
+  // if (isFetching) {
+  //   return <h1>Bentar woy...</h1>
+  // }
 
   return (
     <div className="App">
@@ -135,11 +177,30 @@ function App() {
       <p>Coba Berhitung: {postId}</p>
       <button onClick={e=>setPostId(postId+1)}>Pencet Dong</button>
 
-      <h1>{post.title}</h1>
-      <p>{post.body}</p>
+      {/* Cara Kedua pakai Tenary */}
+      {/* {
+        isFetching ? (
+          <h1>Sabaar dong...</h1>
+        ) : (
+          <>
+            <h1>{post.title}</h1>
+            <p>{post.body}</p>
+          </>
+        )
+      } */}
+
+      {/* Cara Ketiga pakai AND Operator */}
+      {isFetching && <h1>Sabaar woooy...</h1> }
+      {!isFetching &&
+        <>
+          <h1>{post.title}</h1>
+          <p>{post.body}</p>
+        </>
+      }
     </div>
   );
 }
 
+
 export default App;
-// --------------------- 7 - useEffect Hook for SideEffect ---------------------
+// --------------------- 8 - Conditional Rendering ---------------------

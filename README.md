@@ -68,3 +68,12 @@ Contoh kasus menggunakan
 
 File yg di gunakan di src
 - App.js
+
+# // ---------- 8 - Conditional Rendering ----------
+Lanjutan dari latihan 7.<br />
+
+Contoh kasus menggunakan
+[http://jsonplaceholder.typicode.com/posts/1](http://jsonplaceholder.typicode.com/posts/1)
+
+File yg di gunakan di src
+- App.js
